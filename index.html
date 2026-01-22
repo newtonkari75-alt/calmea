@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
+    <!-- Microsoft Clarity -->
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "v5ckfreufl");
+    </script>
+
     <!-- ============================================== -->
     <!-- 1. TECHNICAL PERFORMANCE & PRELOADING -->
     <!-- ============================================== -->
@@ -347,7 +356,8 @@
                     <div class="flex items-center justify-center gap-2 cursor-pointer" onclick="window.scrollTo(0,0)">
                         <!-- Logo Image with Fallback Text -->
                          <div class="flex items-center gap-2">
-                             <img src="images/calmea-logo.svg" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" alt="Calmea Logo" class="h-10 md:h-12 w-auto object-contain">
+                             <!-- Reduced mobile height to h-7 -->
+                             <img src="images/calmea-logo.svg" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" alt="Calmea Logo" class="h-7 md:h-12 w-auto object-contain">
                              <span style="display:none" class="text-3xl font-black text-brand-black tracking-tighter">Calmea</span>
                          </div>
                     </div>
@@ -450,122 +460,122 @@
                     <p class="text-sm text-gray-500 font-medium">Select your shipping destination to unlock exclusive inventory.</p>
                 </div>
 
-                <!-- Grid updated for 9 items -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto mb-8">
+                <!-- Grid updated: 2 columns on mobile, 3 on large screens -->
+                <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 max-w-5xl mx-auto mb-8">
                     
                     <!-- 1. Sweden (Suécia) -->
-                    <!-- Removed bg-white, border, shadow from buttons -->
-                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77QQ6JK/?uid=10639')" class="p-4 rounded-xl hover:bg-gray-100 transition-all duration-300 flex items-center gap-4 group w-full text-left cursor-pointer">
+                    <!-- Updated Layout: Vertical on mobile, Horizontal on desktop -->
+                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77QQ6JK/?uid=10639')" class="p-3 sm:p-4 rounded-xl hover:bg-gray-100 transition-all duration-300 flex flex-col sm:flex-row items-center gap-2 sm:gap-4 group w-full text-center sm:text-left cursor-pointer">
                         <div class="relative shrink-0 rounded overflow-hidden">
-                            <img src="https://flagcdn.com/w160/se.png" class="w-16 h-auto object-cover" alt="Sweden">
+                            <img src="https://flagcdn.com/w160/se.png" class="w-10 sm:w-16 h-auto object-cover" alt="Sweden">
                         </div>
                         <div>
-                            <span class="block text-lg font-black text-gray-900 leading-none mb-1 group-hover:text-brand-blue">Sweden</span>
-                            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-green-50 text-green-700 border border-green-100 uppercase tracking-wide">
+                            <span class="block text-sm sm:text-lg font-black text-gray-900 leading-none mb-1 group-hover:text-brand-blue">Sweden</span>
+                            <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-green-50 text-green-700 border border-green-100 uppercase tracking-wide">
                                 <span class="w-1.5 h-1.5 rounded-full bg-green-500 mr-1.5"></span> Available
                             </span>
                         </div>
                     </button>
 
                     <!-- 2. Netherlands (Países Baixos) -->
-                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77PC9RZ/?uid=10638')" class="p-4 rounded-xl hover:bg-gray-100 transition-all duration-300 flex items-center gap-4 group w-full text-left cursor-pointer">
+                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77PC9RZ/?uid=10638')" class="p-3 sm:p-4 rounded-xl hover:bg-gray-100 transition-all duration-300 flex flex-col sm:flex-row items-center gap-2 sm:gap-4 group w-full text-center sm:text-left cursor-pointer">
                          <div class="relative shrink-0 rounded overflow-hidden">
-                            <img src="https://flagcdn.com/w160/nl.png" class="w-16 h-auto object-cover" alt="Netherlands">
+                            <img src="https://flagcdn.com/w160/nl.png" class="w-10 sm:w-16 h-auto object-cover" alt="Netherlands">
                         </div>
                         <div>
-                            <span class="block text-lg font-black text-gray-900 leading-none mb-1 group-hover:text-brand-blue">Netherlands</span>
-                            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-red-50 text-red-600 border border-red-100 uppercase tracking-wide">
+                            <span class="block text-sm sm:text-lg font-black text-gray-900 leading-none mb-1 group-hover:text-brand-blue">Netherlands</span>
+                            <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-red-50 text-red-600 border border-red-100 uppercase tracking-wide">
                                 <span class="w-1.5 h-1.5 rounded-full bg-red-500 mr-1.5 animate-pulse"></span> Low Stock
                             </span>
                         </div>
                     </button>
 
                     <!-- 3. France (França) -->
-                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77MZF3C/?uid=10635')" class="p-4 rounded-xl hover:bg-gray-100 transition-all duration-300 flex items-center gap-4 group w-full text-left cursor-pointer">
+                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77MZF3C/?uid=10635')" class="p-3 sm:p-4 rounded-xl hover:bg-gray-100 transition-all duration-300 flex flex-col sm:flex-row items-center gap-2 sm:gap-4 group w-full text-center sm:text-left cursor-pointer">
                         <div class="relative shrink-0 rounded overflow-hidden">
-                            <img src="https://flagcdn.com/w160/fr.png" class="w-16 h-auto object-cover" alt="France">
+                            <img src="https://flagcdn.com/w160/fr.png" class="w-10 sm:w-16 h-auto object-cover" alt="France">
                         </div>
                         <div>
-                            <span class="block text-lg font-black text-gray-900 leading-none mb-1 group-hover:text-brand-blue">France</span>
-                            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-red-50 text-red-600 border border-red-100 uppercase tracking-wide">
+                            <span class="block text-sm sm:text-lg font-black text-gray-900 leading-none mb-1 group-hover:text-brand-blue">France</span>
+                            <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-red-50 text-red-600 border border-red-100 uppercase tracking-wide">
                                 <span class="w-1.5 h-1.5 rounded-full bg-red-500 mr-1.5 animate-pulse"></span> Low Stock
                             </span>
                         </div>
                     </button>
 
                     <!-- 4. Finland (Finlândia) -->
-                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77LKJBQ/?uid=10634')" class="p-4 rounded-xl hover:bg-gray-100 transition-all duration-300 flex items-center gap-4 group w-full text-left cursor-pointer">
+                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77LKJBQ/?uid=10634')" class="p-3 sm:p-4 rounded-xl hover:bg-gray-100 transition-all duration-300 flex flex-col sm:flex-row items-center gap-2 sm:gap-4 group w-full text-center sm:text-left cursor-pointer">
                         <div class="relative shrink-0 rounded overflow-hidden">
-                            <img src="https://flagcdn.com/w160/fi.png" class="w-16 h-auto object-cover" alt="Finland">
+                            <img src="https://flagcdn.com/w160/fi.png" class="w-10 sm:w-16 h-auto object-cover" alt="Finland">
                         </div>
                         <div>
-                            <span class="block text-lg font-black text-gray-900 leading-none mb-1 group-hover:text-brand-blue">Finland</span>
-                            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-green-50 text-green-700 border border-green-100 uppercase tracking-wide">
+                            <span class="block text-sm sm:text-lg font-black text-gray-900 leading-none mb-1 group-hover:text-brand-blue">Finland</span>
+                            <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-green-50 text-green-700 border border-green-100 uppercase tracking-wide">
                                 <span class="w-1.5 h-1.5 rounded-full bg-green-500 mr-1.5"></span> Available
                             </span>
                         </div>
                     </button>
 
                     <!-- 5. Denmark (Dinamarca) -->
-                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77K6ML5/?uid=10633')" class="p-4 rounded-xl hover:bg-gray-100 transition-all duration-300 flex items-center gap-4 group w-full text-left cursor-pointer">
+                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77K6ML5/?uid=10633')" class="p-3 sm:p-4 rounded-xl hover:bg-gray-100 transition-all duration-300 flex flex-col sm:flex-row items-center gap-2 sm:gap-4 group w-full text-center sm:text-left cursor-pointer">
                         <div class="relative shrink-0 rounded overflow-hidden">
-                            <img src="https://flagcdn.com/w160/dk.png" class="w-16 h-auto object-cover" alt="Denmark">
+                            <img src="https://flagcdn.com/w160/dk.png" class="w-10 sm:w-16 h-auto object-cover" alt="Denmark">
                         </div>
                         <div>
-                            <span class="block text-lg font-black text-gray-900 leading-none mb-1 group-hover:text-brand-blue">Denmark</span>
-                            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-red-50 text-red-600 border border-red-100 uppercase tracking-wide">
+                            <span class="block text-sm sm:text-lg font-black text-gray-900 leading-none mb-1 group-hover:text-brand-blue">Denmark</span>
+                            <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-red-50 text-red-600 border border-red-100 uppercase tracking-wide">
                                 <span class="w-1.5 h-1.5 rounded-full bg-red-500 mr-1.5 animate-pulse"></span> Low Stock
                             </span>
                         </div>
                     </button>
 
                     <!-- 6. Austria (Áustria) -->
-                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77HRQTJ/?uid=10629')" class="p-4 rounded-xl hover:bg-gray-100 transition-all duration-300 flex items-center gap-4 group w-full text-left cursor-pointer">
+                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77HRQTJ/?uid=10629')" class="p-3 sm:p-4 rounded-xl hover:bg-gray-100 transition-all duration-300 flex flex-col sm:flex-row items-center gap-2 sm:gap-4 group w-full text-center sm:text-left cursor-pointer">
                         <div class="relative shrink-0 rounded overflow-hidden">
-                            <img src="https://flagcdn.com/w160/at.png" class="w-16 h-auto object-cover" alt="Austria">
+                            <img src="https://flagcdn.com/w160/at.png" class="w-10 sm:w-16 h-auto object-cover" alt="Austria">
                         </div>
                         <div>
-                            <span class="block text-lg font-black text-gray-900 leading-none mb-1 group-hover:text-brand-blue">Austria</span>
-                            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-green-50 text-green-700 border border-green-100 uppercase tracking-wide">
+                            <span class="block text-sm sm:text-lg font-black text-gray-900 leading-none mb-1 group-hover:text-brand-blue">Austria</span>
+                            <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-green-50 text-green-700 border border-green-100 uppercase tracking-wide">
                                 <span class="w-1.5 h-1.5 rounded-full bg-green-500 mr-1.5"></span> Available
                             </span>
                         </div>
                     </button>
 
                     <!-- 7. Germany (Alemanha) -->
-                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77HRQTJ/?uid=10629')" class="p-4 rounded-xl hover:bg-gray-100 transition-all duration-300 flex items-center gap-4 group w-full text-left cursor-pointer">
+                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77HRQTJ/?uid=10629')" class="p-3 sm:p-4 rounded-xl hover:bg-gray-100 transition-all duration-300 flex flex-col sm:flex-row items-center gap-2 sm:gap-4 group w-full text-center sm:text-left cursor-pointer">
                         <div class="relative shrink-0 rounded overflow-hidden">
-                            <img src="https://flagcdn.com/w160/de.png" class="w-16 h-auto object-cover" alt="Germany">
+                            <img src="https://flagcdn.com/w160/de.png" class="w-10 sm:w-16 h-auto object-cover" alt="Germany">
                         </div>
                         <div>
-                            <span class="block text-lg font-black text-gray-900 leading-none mb-1 group-hover:text-brand-blue">Germany</span>
-                            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-red-50 text-red-600 border border-red-100 uppercase tracking-wide">
+                            <span class="block text-sm sm:text-lg font-black text-gray-900 leading-none mb-1 group-hover:text-brand-blue">Germany</span>
+                            <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-red-50 text-red-600 border border-red-100 uppercase tracking-wide">
                                 <span class="w-1.5 h-1.5 rounded-full bg-red-500 mr-1.5 animate-pulse"></span> Low Stock
                             </span>
                         </div>
                     </button>
 
                     <!-- 8. Switzerland (Suíça) -->
-                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77HRQTJ/?uid=10629')" class="p-4 rounded-xl hover:bg-gray-100 transition-all duration-300 flex items-center gap-4 group w-full text-left cursor-pointer">
+                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77HRQTJ/?uid=10629')" class="p-3 sm:p-4 rounded-xl hover:bg-gray-100 transition-all duration-300 flex flex-col sm:flex-row items-center gap-2 sm:gap-4 group w-full text-center sm:text-left cursor-pointer">
                         <div class="relative shrink-0 rounded overflow-hidden">
-                            <img src="https://flagcdn.com/w160/ch.png" class="w-16 h-auto object-cover" alt="Switzerland">
+                            <img src="https://flagcdn.com/w160/ch.png" class="w-10 sm:w-16 h-auto object-cover" alt="Switzerland">
                         </div>
                         <div>
-                            <span class="block text-lg font-black text-gray-900 leading-none mb-1 group-hover:text-brand-blue">Switzerland</span>
-                            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-red-50 text-red-600 border border-red-100 uppercase tracking-wide">
+                            <span class="block text-sm sm:text-lg font-black text-gray-900 leading-none mb-1 group-hover:text-brand-blue">Switzerland</span>
+                            <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-red-50 text-red-600 border border-red-100 uppercase tracking-wide">
                                 <span class="w-1.5 h-1.5 rounded-full bg-red-500 mr-1.5 animate-pulse"></span> Low Stock
                             </span>
                         </div>
                     </button>
                     
                     <!-- 9. Belgium (Bélgica) -->
-                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77GDW4X/?uid=10627')" class="p-4 rounded-xl hover:bg-gray-100 transition-all duration-300 flex items-center gap-4 group w-full text-left cursor-pointer">
+                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77GDW4X/?uid=10627')" class="p-3 sm:p-4 rounded-xl hover:bg-gray-100 transition-all duration-300 flex flex-col sm:flex-row items-center gap-2 sm:gap-4 group w-full text-center sm:text-left cursor-pointer">
                         <div class="relative shrink-0 rounded overflow-hidden">
-                            <img src="https://flagcdn.com/w160/be.png" class="w-16 h-auto object-cover" alt="Belgium">
+                            <img src="https://flagcdn.com/w160/be.png" class="w-10 sm:w-16 h-auto object-cover" alt="Belgium">
                         </div>
                         <div>
-                            <span class="block text-lg font-black text-gray-900 leading-none mb-1 group-hover:text-brand-blue">Belgium</span>
-                            <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-green-50 text-green-700 border border-green-100 uppercase tracking-wide">
+                            <span class="block text-sm sm:text-lg font-black text-gray-900 leading-none mb-1 group-hover:text-brand-blue">Belgium</span>
+                            <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-bold bg-green-50 text-green-700 border border-green-100 uppercase tracking-wide">
                                 <span class="w-1.5 h-1.5 rounded-full bg-green-500 mr-1.5"></span> Available
                             </span>
                         </div>
