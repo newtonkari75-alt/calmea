@@ -26,7 +26,7 @@
     <link rel="preload" as="image" href="images/calmea.png">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" as="style">
     
-    <!-- DNS Prefetch & Preconnect (Speed Optimization) -->
+    <!-- DNS Prefetch & Preconnect -->
     <link rel="preconnect" href="https://cdn.tailwindcss.com" crossorigin>
     <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
@@ -37,18 +37,15 @@
     <link rel="preconnect" href="https://cdn.raadsgate.com">
     
     <!-- ============================================== -->
-    <!-- 2. SEO META TAGS (ADVANCED & OPTIMIZED) -->
+    <!-- 2. SEO META TAGS -->
     <!-- ============================================== -->
     <title>Calmea™ | Herbal Joint Relief, Stress & Sleep Support</title>
     <meta name="title" content="Calmea™ | Herbal Joint Relief, Stress & Sleep Support">
     <meta name="description" content="Goodbye tension, hello balance. Daily support to soothe joints, relax the mind, and promote deep sleep with Calmea™ – a gentle herbal capsule. 30-Day Guarantee.">
     <meta name="keywords" content="calmea, herbal supplement, joint relief, stress relief, sleep support, natural sleep aid, joint pain relief, herbal capsules, relaxation, daily balance">
-    <meta name="author" content="Calmea Global Distributor">
     
-    <!-- Canonical URL -->
+    <!-- Canonical & Hreflang -->
     <link rel="canonical" href="https://calmea.vercel.app/">
-
-    <!-- Hreflang Tags -->
     <link rel="alternate" href="https://calmea.vercel.app/" hreflang="x-default" />
     <link rel="alternate" href="https://calmea.vercel.app/" hreflang="en" />
     <link rel="alternate" href="https://calmea.vercel.app/" hreflang="sv-SE" />
@@ -63,56 +60,17 @@
     <link rel="alternate" href="https://calmea.vercel.app/" hreflang="nl-BE" />
     <link rel="alternate" href="https://calmea.vercel.app/" hreflang="fr-BE" />
 
-    <!-- Robots -->
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="robots" content="index, follow, max-image-preview:large">
 
     <!-- ============================================== -->
     <!-- 3. OPEN GRAPH & SOCIAL -->
     <!-- ============================================== -->
     <meta property="og:type" content="product">
     <meta property="og:url" content="https://calmea.vercel.app/">
-    <meta property="og:site_name" content="Calmea Official Store">
     <meta property="og:title" content="Calmea™ - Goodbye Tension, Hello Balance.">
-    <meta property="og:description" content="Daily support to soothe joints, relax the mind, and promote deep sleep – with just one gentle herbal capsule.">
+    <meta property="og:description" content="Daily support to soothe joints, relax the mind, and promote deep sleep.">
     <meta property="og:image" content="https://calmea.vercel.app/images/calmea.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="en_US">
-    <meta property="product:availability" content="instock">
-    <meta property="product:price:amount" content="49.99">
-    <meta property="product:price:currency" content="USD">
     
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Calmea™ - Joint, Stress & Sleep Support">
-    <meta name="twitter:description" content="Daily support to soothe joints, relax the mind, and promote deep sleep.">
-    <meta name="twitter:image" content="https://calmea.vercel.app/images/calmea.png">
-
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    [
-        {
-          "@context": "https://schema.org/",
-          "@type": "Product",
-          "name": "Calmea™ Herbal Supplement",
-          "image": ["https://calmea.vercel.app/images/calmea.png"],
-          "description": "Calmea is a herbal formula designed to support body and mind through joint relief, stress reduction, and sleep support.",
-          "brand": { "@type": "Brand", "name": "Calmea" },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "1284"
-          },
-          "offers": {
-            "@type": "Offer",
-            "priceCurrency": "USD",
-            "price": "49.99",
-            "availability": "https://schema.org/InStock"
-          }
-        }
-    ]
-    </script>
-
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome -->
@@ -175,8 +133,7 @@
             <main class="px-5 pt-6 pb-8 lg:px-12 lg:py-12 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                 <!-- Media -->
                 <div class="lg:col-span-5 lg:sticky lg:top-48">
-                    <!-- Removed border and added subtle shadow only -->
-                    <div class="relative w-3/4 sm:w-2/3 lg:w-full mx-auto aspect-square rounded-xl overflow-hidden">
+                    <div class="relative w-3/4 sm:w-2/3 lg:w-full mx-auto aspect-square rounded-xl overflow-hidden shadow-sm">
                         <video src="images/resqvac.mp4" poster="images/calmea.png" autoplay muted loop playsinline class="w-full h-full object-cover">
                             Your browser does not support the video tag.
                         </video>
@@ -219,29 +176,67 @@
                 </div>
             </main>
 
-            <!-- REGION SELECTOR -->
+            <!-- REGION SELECTOR (RESTORED FULL LIST) -->
             <section id="region-selector" class="bg-gray-50 py-10 px-5 border-t border-gray-200 scroll-mt-36">
                 <div class="text-center mb-8">
                     <h2 class="text-2xl md:text-3xl font-black text-black mb-2">Check Availability in Your Region</h2>
                     <p class="text-sm text-gray-500">Select your shipping destination to unlock exclusive inventory.</p>
                 </div>
 
-                <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
-                    <!-- Removed internal borders from region buttons -->
+                <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+                    <!-- 1. Sweden -->
                     <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77QQ6JK/?uid=10639')" class="p-4 bg-white rounded-xl hover:shadow-md transition flex flex-col items-center gap-2 group cursor-pointer">
                         <img src="https://flagcdn.com/w160/se.png" class="w-12 h-auto" alt="Sweden">
                         <span class="font-bold group-hover:text-brand-blue">Sweden</span>
                         <span class="text-[10px] text-green-600 font-bold uppercase">● Available</span>
                     </button>
+                    <!-- 2. Netherlands -->
                     <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77PC9RZ/?uid=10638')" class="p-4 bg-white rounded-xl hover:shadow-md transition flex flex-col items-center gap-2 group cursor-pointer">
                         <img src="https://flagcdn.com/w160/nl.png" class="w-12 h-auto" alt="Netherlands">
                         <span class="font-bold group-hover:text-brand-blue">Netherlands</span>
                         <span class="text-[10px] text-red-600 font-bold uppercase">● Low Stock</span>
                     </button>
+                    <!-- 3. France -->
                     <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77MZF3C/?uid=10635')" class="p-4 bg-white rounded-xl hover:shadow-md transition flex flex-col items-center gap-2 group cursor-pointer">
                         <img src="https://flagcdn.com/w160/fr.png" class="w-12 h-auto" alt="France">
                         <span class="font-bold group-hover:text-brand-blue">France</span>
                         <span class="text-[10px] text-red-600 font-bold uppercase">● Low Stock</span>
+                    </button>
+                    <!-- 4. Finland -->
+                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77LKJBQ/?uid=10634')" class="p-4 bg-white rounded-xl hover:shadow-md transition flex flex-col items-center gap-2 group cursor-pointer">
+                        <img src="https://flagcdn.com/w160/fi.png" class="w-12 h-auto" alt="Finland">
+                        <span class="font-bold group-hover:text-brand-blue">Finland</span>
+                        <span class="text-[10px] text-green-600 font-bold uppercase">● Available</span>
+                    </button>
+                    <!-- 5. Denmark -->
+                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77K6ML5/?uid=10633')" class="p-4 bg-white rounded-xl hover:shadow-md transition flex flex-col items-center gap-2 group cursor-pointer">
+                        <img src="https://flagcdn.com/w160/dk.png" class="w-12 h-auto" alt="Denmark">
+                        <span class="font-bold group-hover:text-brand-blue">Denmark</span>
+                        <span class="text-[10px] text-red-600 font-bold uppercase">● Low Stock</span>
+                    </button>
+                    <!-- 6. Austria -->
+                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77HRQTJ/?uid=10629')" class="p-4 bg-white rounded-xl hover:shadow-md transition flex flex-col items-center gap-2 group cursor-pointer">
+                        <img src="https://flagcdn.com/w160/at.png" class="w-12 h-auto" alt="Austria">
+                        <span class="font-bold group-hover:text-brand-blue">Austria</span>
+                        <span class="text-[10px] text-green-600 font-bold uppercase">● Available</span>
+                    </button>
+                    <!-- 7. Germany -->
+                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77HRQTJ/?uid=10629')" class="p-4 bg-white rounded-xl hover:shadow-md transition flex flex-col items-center gap-2 group cursor-pointer">
+                        <img src="https://flagcdn.com/w160/de.png" class="w-12 h-auto" alt="Germany">
+                        <span class="font-bold group-hover:text-brand-blue">Germany</span>
+                        <span class="text-[10px] text-red-600 font-bold uppercase">● Low Stock</span>
+                    </button>
+                    <!-- 8. Switzerland -->
+                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77HRQTJ/?uid=10629')" class="p-4 bg-white rounded-xl hover:shadow-md transition flex flex-col items-center gap-2 group cursor-pointer">
+                        <img src="https://flagcdn.com/w160/ch.png" class="w-12 h-auto" alt="Switzerland">
+                        <span class="font-bold group-hover:text-brand-blue">Switzerland</span>
+                        <span class="text-[10px] text-red-600 font-bold uppercase">● Low Stock</span>
+                    </button>
+                    <!-- 9. Belgium -->
+                    <button onclick="goToOffer('https://www.clickrtrckr.com/2LXFFTP/77GDW4X/?uid=10627')" class="p-4 bg-white rounded-xl hover:shadow-md transition flex flex-col items-center gap-2 group cursor-pointer">
+                        <img src="https://flagcdn.com/w160/be.png" class="w-12 h-auto" alt="Belgium">
+                        <span class="font-bold group-hover:text-brand-blue">Belgium</span>
+                        <span class="text-[10px] text-green-600 font-bold uppercase">● Available</span>
                     </button>
                 </div>
             </section>
@@ -253,20 +248,31 @@
                     <nav class="flex flex-wrap justify-center gap-6 mb-8 text-sm text-gray-500 font-medium">
                         <button onclick="openModal('privacy')" class="hover:text-black hover:underline">Privacy Policy</button>
                         <button onclick="openModal('terms')" class="hover:text-black hover:underline">Terms of Service</button>
+                        <button onclick="openModal('shipping')" class="hover:text-black hover:underline">Shipping & Delivery</button>
+                        <button onclick="openModal('returns')" class="hover:text-black hover:underline">Returns & Refunds</button>
                         <button onclick="openModal('contact')" class="hover:text-black hover:underline">Contact Us</button>
                     </nav>
-                    <p class="text-[9px] text-gray-400 max-w-2xl mx-auto mb-4">
-                        Medical Disclaimer: The products and information found on this site are not intended to diagnose, treat, cure, or prevent any disease. Calmea is a herbal supplement.
-                    </p>
+                    
+                    <div class="max-w-3xl mx-auto text-[9px] text-gray-400 leading-tight space-y-2 mb-6 opacity-80">
+                        <p><strong>Medical Disclaimer:</strong> The products and information found on this site are not intended to diagnose, treat, cure, or prevent any disease. Calmea is a herbal supplement. Always consult a physician or healthcare professional.</p>
+                        <p><strong>Advertising Disclosure:</strong> This website is an authorized distributor marketplace. We may receive compensation for purchases made through links on this site. FACEBOOK is a trademark of FACEBOOK, Inc.</p>
+                    </div>
+
                     <div class="text-xs text-gray-400">© 2026 Calmea Distributor. All rights reserved.</div>
+                    <div class="text-[10px] text-gray-300 mt-2">Haur B.V. | John M. Keynesplein 1, 1066EP Amsterdam, Netherlands</div>
                 </div>
             </footer>
         </div>
 
-        <!-- MODAL -->
+        <!-- MODAL SYSTEM -->
         <div id="info-modal" class="fixed inset-0 bg-black bg-opacity-50 z-[100] hidden items-center justify-center p-4 backdrop-blur-sm">
             <div class="bg-white rounded-xl shadow-2xl w-full max-w-2xl max-h-[90vh] flex flex-col animate-fade-in-up">
-                <div id="modal-content" class="p-6 md:p-8 overflow-y-auto"></div>
+                <div class="p-4 flex justify-end">
+                    <button onclick="closeModal()" class="text-gray-400 hover:text-black"><i class="fas fa-times text-xl"></i></button>
+                </div>
+                <div id="modal-content" class="px-6 pb-8 md:px-8 md:pb-10 overflow-y-auto text-gray-700 text-sm leading-relaxed">
+                    <!-- Content Injected via JS -->
+                </div>
                 <div class="p-4 border-t bg-gray-50 rounded-b-xl flex justify-end">
                     <button onclick="closeModal()" class="bg-black text-white px-6 py-2 rounded-lg text-sm font-bold">Close</button>
                 </div>
@@ -284,9 +290,30 @@
         }
 
         const modalContent = {
-            'privacy': `<h2 class="text-xl font-bold mb-4">Privacy Policy</h2><p>Your privacy is important to us. We only collect data necessary to process your orders and improve our services.</p>`,
-            'terms': `<h2 class="text-xl font-bold mb-4">Terms of Service</h2><p>By using this site, you agree to our terms. Products are for adult use only.</p>`,
-            'contact': `<h2 class="text-xl font-bold mb-4">Contact</h2><p>Email: hello@getcalmea.com</p>`
+            'privacy': `
+                <h2 class="text-2xl font-bold mb-4">Política de Privacidade</h2>
+                <p class="mb-4">Estamos empenhados em proteger a sua privacidade e em processar os seus dados pessoais de forma transparente e segura, em total conformidade com o RGPD.</p>
+                <p class="mb-4">Os dados coletados são utilizados exclusivamente para o processamento de pedidos e melhoria da experiência do usuário no nosso site.</p>
+                <p>Para mais informações, entre em contato com hello@getcalmea.com.</p>
+            `,
+            'terms': `
+                <h2 class="text-2xl font-bold mb-4">Allgemeine Geschäftsbedingungen</h2>
+                <p class="mb-4">Diese Website wird von Haur B.V. betrieben. Durch die Nutzung der Website erklären Sie sich mit diesen Bedingungen einverstanden.</p>
+                <p class="mb-4">Alle Bestellungen unterliegen der Bestätigung durch den Verkäufer. Versandzeiten können je nach Zielort variieren.</p>
+            `,
+            'shipping': `
+                <h2 class="text-2xl font-bold mb-4">Versand und Lieferung</h2>
+                <p class="mb-4">Alle Bestellungen werden innerhalb von 1-3 Werktagen bearbeitet. Die Versandzeit beträgt in der Regel 2-14 Werktage.</p>
+            `,
+            'returns': `
+                <h2 class="text-2xl font-bold mb-4">Returns & Refunds</h2>
+                <p class="mb-4">30-day money back guarantee. Returns must be unopened and in original packaging.</p>
+            `,
+            'contact': `
+                <h2 class="text-2xl font-bold mb-4">Contact</h2>
+                <p>Email: hello@getcalmea.com</p>
+                <p>Company: Haur B.V., Amsterdam, Netherlands.</p>
+            `
         };
 
         function openModal(type) {
